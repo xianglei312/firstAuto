@@ -23,7 +23,7 @@ public class UserController {
     public String index() {
         return "user/index";
     }
-
+    //git测试,这是git测试
     @RequestMapping(value = "/show", method = RequestMethod.GET)
     @ResponseBody
     public String show(@RequestParam(value = "name") String name) {
