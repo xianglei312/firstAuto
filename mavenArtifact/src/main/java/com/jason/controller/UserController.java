@@ -25,7 +25,7 @@ public class UserController {
     }
 
     //git测试,这是git测试
-    @RequestMapping(value = "/showThat", method = RequestMethod.GET)
+    @RequestMapping(value = "/show", method = RequestMethod.GET)
     @ResponseBody
     public String show(@RequestParam(value = "name") String name) {
         User user = userService.findUserByName(name);
